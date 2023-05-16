@@ -656,7 +656,7 @@ Footer Section
 
 /*
 ==========
-  Modal
+  MODAL
 ==========
 */
 .backdrop {
@@ -689,6 +689,7 @@ Footer Section
 .backdrop .modal {
   width: 408px;
   min-height: 576px;
+  padding: 72px 24px 24px 24px;
   background-color: var(--dairy);
   left: 50%;
   top: 50%;
@@ -698,6 +699,14 @@ Footer Section
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop .modal .heading {
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 18px;
 }
 
 .backdrop .close-button {
@@ -729,4 +738,90 @@ Footer Section
 .backdrop .close-button:hover .close-icon,
 .backdrop .close-button:focus .close-icon {
   fill: var(--white);
+}
+
+/*
+===============
+FORM
+===============
+*/
+
+.form-label {
+  color: var(--light-slate);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+}
+
+.form-label.form-agreement {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.form-wrapper {
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.form-wrapper .form-input {
+  width: 100%;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 11px 16px 11px 32px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-wrapper .form-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: 400ms;
+  pointer-events: none;
+  fill: var(--navy-blue);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-text {
+  width: 100%;
+  resize: none;
+  margin-bottom: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-text::placeholder {
+  font-size: 12px;
+  line-height: 1.16;
+  color: rgba(46, 47, 66, 0.4);
+}
+
+.form-input:focus,
+.form-text:focus {
+  border: 1px solid var(--iris);
+  outline: transparent;
+  box-shadow: transparent;
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--iris);
+}
+
+.form-label.form-agreement .form-agreement--text {
+  user-select: none;
+}
+
+.form-label.form-agreement .form-agreement--link {
+  color: var(--iris);
+  text-decoration: underline;
+}
+
+.form-btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
 }
