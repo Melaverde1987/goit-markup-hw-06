@@ -794,12 +794,11 @@ FORM
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.04em;
+  margin-bottom: 4px;
+  display: block;
 }
 
 .form-label.form-agreement {
-  display: flex;
-  align-items: center;
-  gap: 8px;
   margin-bottom: 24px;
 }
 
@@ -867,6 +866,9 @@ FORM
   position: relative;
   height: 16px;
   width: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
 }
 
 .form-label.form-agreement .checkbox-wrapper .form-checkbox {
@@ -894,6 +896,7 @@ FORM
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .form-label.form-agreement
